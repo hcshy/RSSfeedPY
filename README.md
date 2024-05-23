@@ -1,6 +1,7 @@
 # RSS Feed Server
 
-This project is a simple HTTPS server that serves an RSS feed and allows clients to post new items to the feed.
+This project is a simple HTTPS server that serves an RSS feed and allows clients to post new items to the feed. I made this to use in Grafana as a broadcasting solution.
+The RSS item is replaced and not appended to the feed!
 
 ## Features
 
