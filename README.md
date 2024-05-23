@@ -19,12 +19,21 @@ This project is a simple HTTPS server that serves an RSS feed and allows clients
 1. Clone the repository or download the release.
 
 2. Configuration
-The settings.conf file allows you to configure the following settings:
 
-host: The hostname or IP address the server will listen on.
-port: The port number the server will listen on.
-certfile: The path to the SSL certificate file.
-keyfile: The path to the SSL key file.
+Create a new settings.conf file or modify the existing one according to your preferences. The settings.conf file should include the following parameters:
+```
+[Server]
+host:localhost                   #The hostname or IP address where you want the server to run (e.g., localhost).
+port:8080                        #The port number where you want the server to listen for incoming connections (e.g., 8080).
+certfile:<path_to_cert>          #The path to the SSL certificate file (e.g., localhost.crt).
+keyfile:<path_to_key>            #The path to the SSL key file (e.g., localhost.key).
+```
+
+Place the settings.conf file in the same directory as the python script. 
+
+Run the python script. The server will start listening for incoming connections based on the settings specified in the settings.conf file.
+
+That's it! You should now have the server running with the configurations specified in the settings.conf file. You can access the server using the specified hostname, port, and SSL certificate.
 
 ### Posting a Request to `/rssitem/`
 
